@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body {
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.menu-humburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #e66465;
+    width: 40px;
+    height: 35px;
+    margin-top: 20px;
+    padding: 5px;
+    float: right;
+    cursor: pointer;
+}
+
+.logo {
+    height: 3px;
+    width: 30px;
+    background-color: white;
+}
+
+.menu {
+    width: 500px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateX(-500px);
+    transition: transform 0.5s;
+    backdrop-filter: blur(18px);
+}
+
+.show-menu {
+    transform: translateX(0px);
+    transition: transform 0.5s;
+}
+
+.menu li {
+    width: 90%;
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 1px solid white;
+}
+
+.menu li:first-child {
+    margin-top: 80px;
+}
+
+.menu li:last-child {
+    border-bottom: none;
+}
+
+.menu li a {
+    color: white;
+    transition: 0.5s;
+}
+
+.menu li a:hover {
+    color: #7f85d1;
+    font-weight: bold;
+}
+
+.music-player {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+}
+
+.music-player .img {
+    position: relative;
+     width: 100%;
+     height: 350px;
+}
+
+.music-player .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.audio {
+    position: relative;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
